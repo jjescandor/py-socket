@@ -1,10 +1,16 @@
 import socket
 import threading
+import os
+from  dotenv import load_dotenv
+from pathlib import Path
+
+dotenv_path = Path('./.env')
+load_dotenv(dotenv_path=dotenv_path)
 
 HEADER = 64
 PORT = 5050
 # SERVER = socket.gethostbyname(socket.gethostname())
-SERVER = "192.168.0.220"
+SERVER = os.getenv("SERVER")
 FORMAT = "utf-8"
 
 
