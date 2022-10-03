@@ -45,8 +45,8 @@ def start():
         thread.start()
         print(f"[ACTIVE CONNECTIONS] {threading.activeCount() - 1}")
 
-
-start()
-print("[STARTING] server is starting...")
+if __name__ == "__main__":
+    start()
+    print("[STARTING] server is starting...")
 
 

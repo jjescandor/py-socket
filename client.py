@@ -26,4 +26,6 @@ def send(msg):
     client.send(message)
 
 
-send("Hello World")
+
+if __name__ == "__main__":
+    send("Hello World")
